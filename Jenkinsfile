@@ -1,4 +1,4 @@
-library 'shared-pipeline'
+library 'shared-pipeline@master'
 pipeline {
     agent any 
     stages {
