@@ -1,10 +1,12 @@
-library 'shared-pipeline@master'
+#!groovy
+@Library('shared-pipeline@master') _
+
 pipeline {
     agent any 
     stages {
         stage('Build') { 
             steps {
-                libraryResource 'echo.groovy'
+                myEcho
                 echo 'This is the build stage'
             }
         }
