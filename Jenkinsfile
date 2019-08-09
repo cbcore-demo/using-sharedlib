@@ -2,7 +2,7 @@
 @Library('shared-pipeline@master') _
 
 pipeline {
-    agent any 
+    agent {label 'k8s'} 
     stages {
         stage('Build') { 
             steps {
